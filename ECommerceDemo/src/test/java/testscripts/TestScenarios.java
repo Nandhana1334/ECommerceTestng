@@ -63,29 +63,29 @@ public class TestScenarios extends CommonClass {
 			   Assert.assertEquals(locateElement(productLocatorPath,"chckCart", "xpath"),"ZARA COAT 3");
 
 		   }
-//
-//		   
-//		   @Test
-//		   public void checkout()
-//		   {
-//			   String orderLocatorPath = System.getProperty("user.dir") + "//src//test//resources//locators//orderLocators.json";
-//
-//			   clickElement(locateElement(orderLocatorPath,"checkoutButton", "xpath"));
-//			   type("OrderData", locateElement(orderLocatorPath,"countryDropdown", "xpath"), "Country");
-//			   clickElement(locateElement(orderLocatorPath,"countryName", "xpath"));
-//			   Assert.assertEquals(locateElement(orderLocatorPath,"chckHeading", "xpath"),"Thankyou for the order.");
-//			   
-//		   }
-//		   @Test
-//		   public void placeOrder()
-//		   {
-//			   String orderLocatorPath = System.getProperty("user.dir") + "//src//test//resources//locators//orderLocators.json";
-//			   clickElement(locateElement(orderLocatorPath,"placeOrder", "xpath"));
-//			   clickElement(locateElement(orderLocatorPath,"orderButton", "xpath"));
-//			   clickElement(locateElement(orderLocatorPath,"viewSummary", "xpath"));
-//			   Assert.assertEquals(readCredentials("OrderData", "OrderId"), "65dec204a86f8f74dc8a1c16");
-//			   
-//		   }
+
+		   
+		   @Test
+		   public void checkout()
+		   {
+			   String orderLocatorPath = System.getProperty("user.dir") + "//src//test//resources//locators//orderLocators.json";
+
+			   clickElement(locateElement(orderLocatorPath,"checkoutButton", "xpath"));
+			   type("OrderData", locateElement(orderLocatorPath,"countryDropdown", "xpath"), "Country");
+			   clickElement(locateElement(orderLocatorPath,"countryName", "xpath"));
+			   Assert.assertEquals(locateElement(orderLocatorPath,"chckHeading", "xpath"),"Thankyou for the order.");
+			   
+		   }
+		   @Test
+		   public void placeOrder()
+		   {
+			   String orderLocatorPath = System.getProperty("user.dir") + "//src//test//resources//locators//orderLocators.json";
+			   clickElement(locateElement(orderLocatorPath,"placeOrder", "xpath"));
+			   clickElement(locateElement(orderLocatorPath,"orderButton", "xpath"));
+			   clickElement(locateElement(orderLocatorPath,"viewSummary", "xpath"));
+			   Assert.assertEquals(readCredentials("OrderData", "OrderId"), "65dec204a86f8f74dc8a1c16");
+			   
+		   }
 		   
 		   
 		   
