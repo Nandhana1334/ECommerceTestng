@@ -1,0 +1,20 @@
+{
+	 
+    "navigateToCart":
+    {
+    "xpath":"//button[contains(text(),' Cart ')]"
+    },
+ 	"chckCart":
+ 	{
+ 	 "xpath":"//h3[contains(text(),'ZARA COAT 3')]"
+ 	},
+ 	"checkoutButton":
+ 	{
+ 	"xpath":"//button[contains(text(),'Checkout')]"
+ 	},
+ 	 "cartButton":{
+    	"xpath":"//button[contains(text(),'Add to Cart')]",
+    	"cssSelector":".btn.btn-primary"
+    }
+   
+ }

@@ -1,0 +1,25 @@
+ {"countryDropdown":
+    {
+    	"xpath":"//input[@placeholder='Select Country']"
+    },
+    "countryName":
+    {
+    "xpath":"(//span[contains(text(),' India')])[2]"
+    },
+    "placeOrder":
+    {
+    "xpath":"//a[contains(text(),'Place Order ')]"
+ },
+ 	"orderButton":
+ 	{
+ 	"xpath":"//button[contains(text(),' ORDERS')]"
+ 	},
+ 	"viewSummary":
+ 	{
+ 	"xpath":"//button[contains(text(),'View')]"
+ 	},
+ 	"chckHeading":
+ 	{
+ 	"xpath":"//h1[contains(text(),' Thankyou for the order.')]"
+ 	}
+ }

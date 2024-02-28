@@ -1,0 +1,20 @@
+{
+    "emailField": {
+        "id": "userEmail",
+        "cssSelector": ".form-control.ng-pristine.ng-invalid.ng-touched",
+        "xpath": "//input[@type='email']"
+    },
+    "passwordField": {
+        "id": "userPassword",
+        "xpath": "//input[@placeholder='enter your passsword']"
+    },
+    "loginButton": {
+        "name": "login",
+        "id": "login",
+        "xpath": "//input[@type='submit']",
+        "cssSelector": ".btn.btn-block.login-btn"
+    },
+    "signoutButton": {
+        "xpath": "//button[contains(text(),' Sign Out ')]"
+    }
+}

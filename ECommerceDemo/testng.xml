@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SampleSuite">
+	<test name ="ModuleOneTest">
+  <!--<test thread-count="5" name="ModuleTest">
+	 <test name ="ModuleOneTest">-->
+	 <classes>
+		
+		 <class name ="testScripts.loginTest"/>
+		 
+	 </classes>
+	 </test>
+	 </suite>
