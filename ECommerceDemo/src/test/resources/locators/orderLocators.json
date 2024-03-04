@@ -1,4 +1,27 @@
- {"countryDropdown":
+ {
+ "checkoutButton":
+ 	{
+ 	"xpath":"//button[contains(text(),'Checkout')]"
+ 	},
+ 
+ "email":
+ {
+ "cssSelector":".input.txt.text-validated.ng-pristine.ng-valid.ng-touched",
+ "xpath":"(//input[@type='text'])[5]"
+ },
+ "creditCardNo":
+ {
+ "xpath":"//input[@value ='4542 9931 9292 2293']"
+ },
+ "cvv":
+ {
+ "xpath":"(//input[@type='text'])[2]"
+ },
+ "name":
+ {
+ "xpath":"(//input[@type='text'])[3]"
+ },
+ "countryDropdown":
     {
     	"xpath":"//input[@placeholder='Select Country']"
     },
@@ -21,5 +44,14 @@
  	"chckHeading":
  	{
  	"xpath":"//h1[contains(text(),' Thankyou for the order.')]"
+ 	},
+ 
+ 	"OrderId1":
+ 	{
+ 	"xpath":"(//tr[@class='ng-star-inserted']//th)[1]"
+ 	},
+ 	"OrderId2":
+ 	{
+ 	"xpath":"//div[@class='col-text -main']"
  	}
  }

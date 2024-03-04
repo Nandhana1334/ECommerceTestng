@@ -1,4 +1,12 @@
 {
+    "homepageProduct":
+    {
+    "xpath":"//b[contains(text(),'ZARA COAT 3')]"
+    
+    },
+    
+    
+    
     "viewButton": {
        
         "cssSelector": ".col-lg-4.col-md-6.col-sm-10.offset-md-0.offset-sm-1.mb-3.ng-star-inserted:first-child",
@@ -9,14 +17,12 @@
     	 "name":"search"
     	 },
     	 
-    "cartButton":{
-    	"xpath":"//button[contains(text(),'Add To Cart')]"
-    },
+    
     "chkHeading":{
     	"xpath":"//h2[contains(text(),'ZARA COAT 3')]",
     	"xpath1":"//h3[contains(text(),'$ 31500')]"
  },
- "cartButtonA":{
+ "cartButton":{
     	"xpath":"//button[contains(text(),'Add to Cart')]",
     	"cssSelector":".btn.btn-primary"
     },

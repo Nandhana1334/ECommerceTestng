@@ -5,8 +5,12 @@
     <classes>
       <class name="testscripts.TestScenarios">
         <methods>
-          <include name="addToCart"/>
+          <include name="tearDown"/>
+          <include name="terminate"/>
           <include name="setup"/>
+          <include name="getResult"/>
+          <include name="addToCartTest"/>
+          <include name="setupExtentReport"/>
         </methods>
       </class> <!-- testscripts.TestScenarios -->
     </classes>

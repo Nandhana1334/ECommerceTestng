@@ -4,14 +4,15 @@
     {
     "xpath":"//button[contains(text(),' Cart ')]"
     },
- 	"chckCart":
+ 	"chckNameInCart":
  	{
  	 "xpath":"//h3[contains(text(),'ZARA COAT 3')]"
  	},
- 	"checkoutButton":
+ 	"chkPriceInCart":
  	{
- 	"xpath":"//button[contains(text(),'Checkout')]"
+ 	"xpath":"(//p[contains(text(),'$ 31500')])[1]"
  	},
+ 	
  	 "cartButton":{
     	"xpath":"//button[contains(text(),'Add to Cart')]",
     	"cssSelector":".btn.btn-primary"

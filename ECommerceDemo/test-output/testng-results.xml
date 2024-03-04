@@ -1,55 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-28T15:20:03 IST" name="Default suite" finished-at="2024-02-28T15:20:39 IST" duration-ms="36108">
+  <suite started-at="2024-03-04T14:52:52 IST" name="Default suite" finished-at="2024-03-04T14:53:14 IST" duration-ms="22889">
     <groups>
     </groups>
-    <test started-at="2024-02-28T15:20:03 IST" name="Default test" finished-at="2024-02-28T15:20:39 IST" duration-ms="36108">
+    <test started-at="2024-03-04T14:52:52 IST" name="Default test" finished-at="2024-03-04T14:53:14 IST" duration-ms="22889">
       <class name="testscripts.TestScenarios">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testscripts.TestScenarios@3527942a]" started-at="2024-02-28T15:20:03 IST" name="setup" finished-at="2024-02-28T15:20:20 IST" duration-ms="17305" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:52:52 IST" name="setup" finished-at="2024-03-04T14:52:58 IST" duration-ms="6685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToCart()[pri:0, instance:testscripts.TestScenarios@3527942a]" started-at="2024-02-28T15:20:21 IST" name="addToCart" finished-at="2024-02-28T15:20:33 IST" duration-ms="12189" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="setupExtentReport()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:52:58 IST" name="setupExtentReport" finished-at="2024-03-04T14:52:59 IST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtentReport -->
+        <test-method signature="addToCartTest()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:52:59 IST" name="addToCartTest" finished-at="2024-03-04T14:53:08 IST" duration-ms="9324" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//section//input[@placeholder='search']"}
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6289ce2d2c0a8747740fd34cdb796f69, findElement {using=xpath, value=//section//input[@placeholder='search']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\nandhana.sri\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64858/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6289ce2d2c0a8747740fd34cdb796f69]]>
+              <![CDATA[expected [] but found [ZARA COAT 3]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section//input[@placeholder='search']"}
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6289ce2d2c0a8747740fd34cdb796f69, findElement {using=xpath, value=//section//input[@placeholder='search']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\nandhana.sri\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64858/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6289ce2d2c0a8747740fd34cdb796f69
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at commonUtils.CommonClass.locateElement(CommonClass.java:263)
-at testscripts.TestScenarios.addToCart(TestScenarios.java:55)
+              <![CDATA[java.lang.AssertionError: expected [] but found [ZARA COAT 3]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at testscripts.TestScenarios.addToCartTest(TestScenarios.java:48)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -78,14 +57,74 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method signature="validLogin()[pri:0, instance:testscripts.TestScenarios@3527942a]" started-at="2024-02-28T15:20:33 IST" name="validLogin" finished-at="2024-02-28T15:20:39 IST" duration-ms="6406" status="PASS">
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:08 IST" name="getResult" finished-at="2024-03-04T14:53:09 IST" duration-ms="675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartTest status=FAILURE method=TestScenarios.addToCartTest()[pri:0, instance:testscripts.TestScenarios@791f145a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
+        </test-method> <!-- getResult -->
+        <test-method signature="cartDisplayTest()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:09 IST" name="cartDisplayTest" finished-at="2024-03-04T14:53:09 IST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartDisplayTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:09 IST" name="getResult" finished-at="2024-03-04T14:53:09 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartDisplayTest status=SUCCESS method=TestScenarios.cartDisplayTest()[pri:0, instance:testscripts.TestScenarios@791f145a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="checkoutTest()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:09 IST" name="checkoutTest" finished-at="2024-03-04T14:53:12 IST" duration-ms="3082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:12 IST" name="getResult" finished-at="2024-03-04T14:53:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutTest status=SUCCESS method=TestScenarios.checkoutTest()[pri:0, instance:testscripts.TestScenarios@791f145a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="placeOrderTest()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:12 IST" name="placeOrderTest" finished-at="2024-03-04T14:53:13 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:13 IST" name="getResult" finished-at="2024-03-04T14:53:13 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeOrderTest status=SUCCESS method=TestScenarios.placeOrderTest()[pri:0, instance:testscripts.TestScenarios@791f145a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:13 IST" name="tearDown" finished-at="2024-03-04T14:53:14 IST" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:testscripts.TestScenarios@791f145a]" started-at="2024-03-04T14:53:14 IST" name="terminate" finished-at="2024-03-04T14:53:14 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
       </class> <!-- testscripts.TestScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
