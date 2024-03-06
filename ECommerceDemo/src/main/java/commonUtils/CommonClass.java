@@ -1,6 +1,7 @@
 package commonUtils;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 
 
@@ -102,16 +103,7 @@ public class CommonClass {
 	    }
 
 
-	  public void validLogin()
-
-	   {
-		   WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		   String loginLocatorPath = System.getProperty("user.dir") + "//src//test//resources//locators//login.json";
-		   type("loginData",locateElement(loginLocatorPath,"emailField", "xpath"), "username");
-		   type("loginData",locateElement(loginLocatorPath,"passwordField", "xpath"),"password");
-		   clickElement(locateElement(loginLocatorPath,"loginButton", "xpath"));
-		   Assert.assertEquals(locateElement(loginLocatorPath,"signoutButton", "xpath").getText(), "Sign Out");
-	 }
+	
 	public  static String readCredentials(String excelSheet,String credentials)
 	{
 		String name="";
@@ -273,7 +265,7 @@ public class CommonClass {
 	
 	return srcFile;
 	}
-	 @AfterMethod
+	 
 	    public void getResult(ITestResult result) {
 	        
 	        if (result.getStatus() == ITestResult.FAILURE) {
